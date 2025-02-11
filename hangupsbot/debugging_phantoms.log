@@ -1,0 +1,709 @@
+2020-12-04 12:13:47 INFO config: /home/ubuntu/.local/share/hangupsbot/config.json read
+2020-12-04 12:13:47 INFO root: memory = /home/ubuntu/.local/share/hangupsbot/memory.json, failsafe = 3, delay = 1
+2020-12-04 12:13:47 INFO config: /home/ubuntu/.local/share/hangupsbot/memory.json read
+2020-12-04 12:13:47 DEBUG urllib3.connectionpool: Starting new HTTPS connection (1): accounts.google.com
+2020-12-04 12:13:47 DEBUG urllib3.connectionpool: https://accounts.google.com:443 "POST /o/oauth2/token HTTP/1.1" 200 None
+2020-12-04 12:13:47 DEBUG urllib3.connectionpool: https://accounts.google.com:443 "GET /accounts/OAuthLogin?source=hangups&issueuberauth=1 HTTP/1.1" 200 None
+2020-12-04 12:13:47 DEBUG urllib3.connectionpool: https://accounts.google.com:443 "GET /MergeSession?service=mail&continue=http://www.google.com&uberauth=APh-3FweiRapwbr43sLOGFNGJqj_sMJBnu7cNJXXihvzUytrxtUnJS9sfOR9UbEdAcizpAmDztw_YJWcejZl6Wt-Frd_1LVjN3o_TBwn-Nf77R6K_xj7X-Q0PWupUo1iS8ALr2oUanp4K3raZjhNSzTcjGraf8E6SXweMCgVHXegj4nPYjIeC6qNrDwvRVDP8JgnB_oC5-UTywZx8nc4yusPyYuRAPaEiegfzUAchJqQH_91btIrJDhialE169xNYuDS-BLtgGEPl14lKI_qTTbbN4yLPm5zkrIjCWq_lcmNLoYP-lN9i-fBlCJA1eT3nHsRslONV2lc1VJ4lsxCj0G00tZvxcmBnihxlcKTx9mISJhlhZHits3PMf7UP3VgoVBjb-18f0g7F_pAvHJ_BFNcFFfTSMLrUQPxMjFA9l5nD3NsqJiSMAusjcxALv40NKHkwUn3fsbS HTTP/1.1" 302 316
+2020-12-04 12:13:48 DEBUG urllib3.connectionpool: https://accounts.google.com:443 "GET /CheckCookie?chtml=LoginDoneHtml&service=mail&continue=https%3A%2F%2Fwww.google.com&gidl=EgIIAA HTTP/1.1" 302 204
+2020-12-04 12:13:48 DEBUG urllib3.connectionpool: Starting new HTTPS connection (1): www.google.com
+2020-12-04 12:13:48 DEBUG urllib3.connectionpool: https://www.google.com:443 "GET / HTTP/1.1" 200 None
+2020-12-04 12:13:48 DEBUG root: connected
+2020-12-04 12:13:48 INFO tagging: refreshed
+2020-12-04 12:13:48 INFO permamem: loading 33 conversations from memory
+2020-12-04 12:13:48 DEBUG permamem: user 116880863767822189835 (Unknown) not definitive
+2020-12-04 12:13:48 INFO permamem: loading 26 users from hangups
+2020-12-04 12:13:48 DEBUG permamem: user 116880863767822189835 (Unknown) not definitive
+2020-12-04 12:13:48 INFO permamem: loading 33 conversations from hangups
+2020-12-04 12:13:48 WARNING permamem: unknown users returned from Geoff, Xaviea, Alberto, Teri, Leah, Unknown, Jarvis, Noah, Chris (UgzHFhAmcLucJ3-Ey8p4AaABAQ): ['116880863767822189835']
+2020-12-04 12:13:48 DEBUG permamem: getentitybyid(): ['116880863767822189835']
+2020-12-04 12:13:49 DEBUG permamem: updating hangups user list 116880863767822189835 (Unknown)
+2020-12-04 12:13:49 DEBUG permamem: user 116880863767822189835 (Unknown) not definitive
+2020-12-04 12:13:49 INFO permamem: total conversations: 33
+2020-12-04 12:13:49 INFO permamem: total users: 26 cached: 26 definitive (at start): 26
+2020-12-04 12:13:49 DEBUG plugins: plugininfo - [admin] tags: ['plugincontrol-plugininfo', 'plugincontrol-admin']
+2020-12-04 12:13:49 DEBUG plugins: pluginunload - [admin] tags: ['plugincontrol-pluginunload', 'plugincontrol-admin']
+2020-12-04 12:13:49 DEBUG plugins: pluginload - [admin] tags: ['plugincontrol-pluginload', 'plugincontrol-admin']
+2020-12-04 12:13:49 DEBUG plugins: pluginreload - [admin] tags: ['plugincontrol-pluginreload', 'plugincontrol-admin']
+2020-12-04 12:13:49 DEBUG plugins: getplugins - [admin] tags: ['plugincontrol-getplugins', 'plugincontrol-admin']
+2020-12-04 12:13:49 DEBUG plugins: removeplugin - [admin] tags: ['plugincontrol-removeplugin', 'plugincontrol-admin']
+2020-12-04 12:13:49 DEBUG plugins: addplugin - [admin] tags: ['plugincontrol-addplugin', 'plugincontrol-admin']
+2020-12-04 12:13:49 DEBUG plugins: importing commands.plugincontrol
+2020-12-04 12:13:49 INFO plugins: plugincontrol - *addplugin, *getplugins, *plugininfo, *pluginload, *pluginreload, *pluginunload, *removeplugin
+2020-12-04 12:13:49 DEBUG plugins: help - [user] tags: ['basic-help', 'basic-user']
+2020-12-04 12:13:49 DEBUG plugins: locale - [admin] tags: ['basic-locale', 'basic-admin']
+2020-12-04 12:13:49 DEBUG plugins: ping - [user] tags: ['basic-ping', 'basic-user']
+2020-12-04 12:13:49 DEBUG plugins: optout - [user] tags: ['basic-optout', 'basic-user']
+2020-12-04 12:13:49 DEBUG plugins: version - [user] tags: ['basic-version', 'basic-user']
+2020-12-04 12:13:49 DEBUG plugins: resourcememory - [admin] tags: ['basic-resourcememory', 'basic-admin']
+2020-12-04 12:13:49 DEBUG plugins: importing commands.basic
+2020-12-04 12:13:49 INFO plugins: basic - help, *locale, optout, ping, *resourcememory, version
+2020-12-04 12:13:49 DEBUG plugins: tagset - [admin] tags: ['tagging-tagset', 'tagging-admin']
+2020-12-04 12:13:49 DEBUG plugins: tagdel - [admin] tags: ['tagging-tagdel', 'tagging-admin']
+2020-12-04 12:13:49 DEBUG plugins: tagspurge - [admin] tags: ['tagging-tagspurge', 'tagging-admin']
+2020-12-04 12:13:49 DEBUG plugins: tagscommand - [admin] tags: ['tagging-tagscommand', 'tagging-admin']
+2020-12-04 12:13:49 DEBUG plugins: tagindexdump - [admin] tags: ['tagging-tagindexdump', 'tagging-admin']
+2020-12-04 12:13:49 DEBUG plugins: tagsconv - [admin] tags: ['tagging-tagsconv', 'tagging-admin']
+2020-12-04 12:13:49 DEBUG plugins: tagsuser - [admin] tags: ['tagging-tagsuser', 'tagging-admin']
+2020-12-04 12:13:49 DEBUG plugins: tagsuserlist - [admin] tags: ['tagging-tagsuserlist', 'tagging-admin']
+2020-12-04 12:13:49 DEBUG plugins: importing commands.tagging
+2020-12-04 12:13:49 INFO plugins: tagging - *tagdel, *tagindexdump, *tagscommand, *tagsconv, *tagset, *tagspurge, *tagsuser, *tagsuserlist
+2020-12-04 12:13:49 DEBUG plugins: importing commands.permamem
+2020-12-04 12:13:49 DEBUG plugins: dumpconv - [admin] tags: ['permamem-dumpconv', 'permamem-admin']
+2020-12-04 12:13:49 DEBUG plugins: dumpunknownusers - [admin] tags: ['permamem-dumpunknownusers', 'permamem-admin']
+2020-12-04 12:13:49 DEBUG plugins: resetunknownusers - [admin] tags: ['permamem-resetunknownusers', 'permamem-admin']
+2020-12-04 12:13:49 DEBUG plugins: refreshusermemory - [admin] tags: ['permamem-refreshusermemory', 'permamem-admin']
+2020-12-04 12:13:49 DEBUG plugins: removeconvrecord - [admin] tags: ['permamem-removeconvrecord', 'permamem-admin']
+2020-12-04 12:13:49 DEBUG plugins: makeallusersindefinite - [admin] tags: ['permamem-makeallusersindefinite', 'permamem-admin']
+2020-12-04 12:13:49 INFO plugins: permamem - *dumpconv, *dumpunknownusers, *makeallusersindefinite, *refreshusermemory, *removeconvrecord, *resetunknownusers
+2020-12-04 12:13:49 DEBUG plugins: importing commands.convid
+2020-12-04 12:13:49 INFO plugins: convid has legacy hangups reference
+2020-12-04 12:13:49 DEBUG plugins: convecho - [admin] tags: ['convid-convecho', 'convid-admin']
+2020-12-04 12:13:49 DEBUG plugins: convfilter - [admin] tags: ['convid-convfilter', 'convid-admin']
+2020-12-04 12:13:49 DEBUG plugins: convleave - [admin] tags: ['convid-convleave', 'convid-admin']
+2020-12-04 12:13:49 DEBUG plugins: convrename - [admin] tags: ['convid-convrename', 'convid-admin']
+2020-12-04 12:13:49 DEBUG plugins: convusers - [admin] tags: ['convid-convusers', 'convid-admin']
+2020-12-04 12:13:49 INFO plugins: convid - *convecho, *convfilter, *convleave, *convrename, *convusers
+2020-12-04 12:13:49 DEBUG plugins: importing commands.loggertochat
+2020-12-04 12:13:49 DEBUG plugins: lograise - [admin] tags: ['loggertochat-lograise', 'loggertochat-admin']
+2020-12-04 12:13:49 DEBUG plugins: logconfig - [admin] tags: ['loggertochat-logconfig', 'loggertochat-admin']
+2020-12-04 12:13:49 INFO plugins: loggertochat - *logconfig, *lograise
+2020-12-04 12:13:49 DEBUG plugins: retrieved 0: image_screenshot.[]
+2020-12-04 12:13:49 DEBUG plugins: retrieved 0: image_linker_reddit.[]
+2020-12-04 12:13:49 DEBUG plugins: retrieved 4: image.['image_links', 'image_screenshot', 'image_linker_reddit', 'image_memegenerator']
+2020-12-04 12:13:49 DEBUG plugins: retrieved 5: _example.['example_webbridge', 'example_memory', 'example_watchmembers', 'example_argpreprocessor', 'example_printrenames']
+2020-12-04 12:13:49 DEBUG plugins: retrieved 6: _unittest.['unittest_shutup', 'unittest_geticon', 'unittest_context', 'unittest_reprocessor', 'unittest_memory', 'unittest_statusevents']
+2020-12-04 12:13:49 DEBUG plugins: retrieved 3: chatbridge.['chatbridge_telegram', 'chatbridge_slack', 'chatbridge_syncrooms']
+2020-12-04 12:13:49 DEBUG plugins: retrieved 0: slackrtm.[]
+2020-12-04 12:13:49 DEBUG plugins: retrieved 3: _chatbridge.['chatbridge_telegram', 'chatbridge_slack', 'chatbridge_syncrooms']
+2020-12-04 12:13:49 DEBUG plugins: retrieved 0: _cam_mail_intercept.[]
+2020-12-04 12:13:49 DEBUG plugins: retrieved 0: cleverbot.[]
+2020-12-04 12:13:49 DEBUG plugins: retrieved 0: telesync.[]
+2020-12-04 12:13:49 DEBUG plugins: retrieved 0: showme.[]
+2020-12-04 12:13:49 DEBUG plugins: retrieved 76: plugins.['twitpic (copy)', 'image', 'image.image_links', 'image.image_screenshot', 'image.image_linker_reddit', 'image.image_memegenerator', 'urbandict', 'botaliases', 'restrictedadd', 'mentions', 'twitpic', 'syncrooms', 'botalive', 'convtools', '_example', '_example.example_webbridge', '_example.example_memory', '_example.example_watchmembers', '_example.example_argpreprocessor', '_example.example_printrenames', 'spawn', 'convtools_invitations', 'wolframalpha', 'lookup', 'dnd', 'default', 'lottery', 'starter', 'asyncio_scratch', 'simplewikipedia', 'humor_hangoutcalls', '_unittest', '_unittest.unittest_shutup', '_unittest.unittest_geticon', '_unittest.unittest_context', '_unittest.unittest_reprocessor', '_unittest.unittest_memory', '_unittest.unittest_statusevents', 'chance', 'xkcd', 'namelock', 'chatlogger', 'chatbridge', 'chatbridge.chatbridge_telegram', 'chatbridge.chatbridge_slack', 'chatbridge.chatbridge_syncrooms', 'api', 'monitoradds', 'botaddnotif', 'slackrtm', 'spotify', 'forwarding', 'metar', 'subscribe', 'linksharing', 'twitter', 'catfact', 'ff_bot', 'foursquare', '_chatbridge', '_chatbridge.chatbridge_telegram', '_chatbridge.chatbridge_slack', '_chatbridge.chatbridge_syncrooms', 'remind', 'forecast', 'tldr', 'syncrooms_config', '_cam_mail_intercept', 'frinkster', 'cleverbot', 'autoreply', 'slack', 'hubot', 'telesync', 'easteregg', 'showme']
+2020-12-04 12:13:49 DEBUG plugins: 0:pluginmanager no match
+2020-12-04 12:13:49 DEBUG plugins: 1:botaliases matched to botaliases
+2020-12-04 12:13:49 DEBUG plugins: 2:default matched to default
+2020-12-04 12:13:49 DEBUG plugins: 3:mentions matched to mentions
+2020-12-04 12:13:49 DEBUG plugins: 4:subscribe matched to subscribe
+2020-12-04 12:13:49 DEBUG plugins: 5:autoreply matched to autoreply
+2020-12-04 12:13:49 DEBUG plugins: 6:dnd matched to dnd
+2020-12-04 12:13:49 DEBUG plugins: 7:starter matched to starter
+2020-12-04 12:13:49 DEBUG plugins: 8:remind matched to remind
+2020-12-04 12:13:49 DEBUG plugins: 9:chance matched to chance
+2020-12-04 12:13:49 DEBUG plugins: 10:image_memegenerator matched to image.image_memegenerator
+2020-12-04 12:13:49 DEBUG plugins: 11:image_links matched to image.image_links
+2020-12-04 12:13:49 DEBUG plugins: 12:image_linker_reddit matched to image.image_linker_reddit
+2020-12-04 12:13:49 DEBUG plugins: 13:twitter-disable no match
+2020-12-04 12:13:49 DEBUG plugins: 14:namelock matched to namelock
+2020-12-04 12:13:49 DEBUG plugins: 15:simplewikipedia matched to simplewikipedia
+2020-12-04 12:13:49 DEBUG plugins: 16:tldr matched to tldr
+2020-12-04 12:13:49 DEBUG plugins: 17:twitpic matched to twitpic
+2020-12-04 12:13:49 DEBUG plugins: 18:ff_bot matched to ff_bot
+2020-12-04 12:13:49 DEBUG plugins: 19:frinkster matched to frinkster
+2020-12-04 12:13:49 INFO plugins: excluded 58: ['twitpic (copy)', 'image', 'image.image_screenshot', 'urbandict', 'restrictedadd', 'syncrooms', 'botalive', 'convtools', '_example', '_example.example_webbridge', '_example.example_memory', '_example.example_watchmembers', '_example.example_argpreprocessor', '_example.example_printrenames', 'spawn', 'convtools_invitations', 'wolframalpha', 'lookup', 'lottery', 'asyncio_scratch', 'humor_hangoutcalls', '_unittest', '_unittest.unittest_shutup', '_unittest.unittest_geticon', '_unittest.unittest_context', '_unittest.unittest_reprocessor', '_unittest.unittest_memory', '_unittest.unittest_statusevents', 'xkcd', 'chatlogger', 'chatbridge', 'chatbridge.chatbridge_telegram', 'chatbridge.chatbridge_slack', 'chatbridge.chatbridge_syncrooms', 'api', 'monitoradds', 'botaddnotif', 'slackrtm', 'spotify', 'forwarding', 'metar', 'linksharing', 'twitter', 'catfact', 'foursquare', '_chatbridge', '_chatbridge.chatbridge_telegram', '_chatbridge.chatbridge_slack', '_chatbridge.chatbridge_syncrooms', 'forecast', 'syncrooms_config', '_cam_mail_intercept', 'cleverbot', 'slack', 'hubot', 'telesync', 'easteregg', 'showme']
+2020-12-04 12:13:49 WARNING plugins: not found: ['0:pluginmanager', '13:twitter-disable']
+2020-12-04 12:13:49 INFO plugins: included 18: ['botaliases', 'default', 'mentions', 'subscribe', 'autoreply', 'dnd', 'starter', 'remind', 'chance', 'image.image_memegenerator', 'image.image_links', 'image.image_linker_reddit', 'namelock', 'simplewikipedia', 'tldr', 'twitpic', 'ff_bot', 'frinkster']
+2020-12-04 12:13:49 DEBUG plugins: importing plugins.botaliases
+2020-12-04 12:13:49 INFO plugins.botaliases: aliases: ['/bot', '/the', '/111483985599117921453']
+2020-12-04 12:13:49 DEBUG plugins: botalias - [user] tags: ['botaliases-botalias', 'botaliases-user']
+2020-12-04 12:13:49 INFO plugins: botaliases - botalias
+2020-12-04 12:13:49 DEBUG plugins: importing plugins.default
+2020-12-04 12:13:49 INFO plugins: default has legacy hangups reference
+2020-12-04 12:13:49 DEBUG plugins: broadcast - [admin] tags: ['default-broadcast', 'default-admin']
+2020-12-04 12:13:49 DEBUG plugins: users - [admin] tags: ['default-users', 'default-admin']
+2020-12-04 12:13:49 DEBUG plugins: user - [admin] tags: ['default-user', 'default-admin']
+2020-12-04 12:13:49 DEBUG plugins: hangouts - [admin] tags: ['default-hangouts', 'default-admin']
+2020-12-04 12:13:49 DEBUG plugins: rename - [admin] tags: ['default-rename', 'default-admin']
+2020-12-04 12:13:49 DEBUG plugins: leave - [admin] tags: ['default-leave', 'default-admin']
+2020-12-04 12:13:49 DEBUG plugins: reload - [admin] tags: ['default-reload', 'default-admin']
+2020-12-04 12:13:49 DEBUG plugins: quit - [admin] tags: ['default-quit', 'default-admin']
+2020-12-04 12:13:49 DEBUG plugins: config - [admin] tags: ['default-config', 'default-admin']
+2020-12-04 12:13:49 DEBUG plugins: whereami - [admin] tags: ['default-whereami', 'default-admin']
+2020-12-04 12:13:49 DEBUG plugins: echo - [user] tags: ['default-echo', 'default-user']
+2020-12-04 12:13:49 DEBUG plugins: whoami - [user] tags: ['default-whoami', 'default-user']
+2020-12-04 12:13:49 INFO plugins: default - *broadcast, *config, echo, *hangouts, *leave, *quit, *reload, *rename, *user, *users, *whereami, whoami
+2020-12-04 12:13:49 DEBUG plugins: importing plugins.mentions
+2020-12-04 12:13:49 DEBUG plugins: pushbulletapi - [user] tags: ['mentions-pushbulletapi', 'mentions-user']
+2020-12-04 12:13:49 DEBUG plugins: setnickname - [user] tags: ['mentions-setnickname', 'mentions-user']
+2020-12-04 12:13:49 DEBUG plugins: bemorespecific - [user] tags: ['mentions-bemorespecific', 'mentions-user']
+2020-12-04 12:13:49 DEBUG plugins: mention - [admin] tags: ['mentions-mention', 'mentions-admin']
+2020-12-04 12:13:49 INFO plugins: mentions - bemorespecific, *mention, pushbulletapi, setnickname
+2020-12-04 12:13:49 DEBUG plugins: importing plugins.subscribe
+2020-12-04 12:13:49 DEBUG plugins: subscribe - [user] tags: ['subscribe-subscribe', 'subscribe-user']
+2020-12-04 12:13:49 DEBUG plugins: unsubscribe - [user] tags: ['subscribe-unsubscribe', 'subscribe-user']
+2020-12-04 12:13:49 DEBUG plugins: testsubscribe - [admin] tags: ['subscribe-testsubscribe', 'subscribe-admin']
+2020-12-04 12:13:49 INFO plugins: subscribe - subscribe, *testsubscribe, unsubscribe
+2020-12-04 12:13:49 DEBUG plugins: importing plugins.autoreply
+2020-12-04 12:13:49 INFO plugins: autoreply has legacy hangups reference
+2020-12-04 12:13:49 DEBUG plugins: autoreply - [admin] tags: ['autoreply-autoreply', 'autoreply-admin']
+2020-12-04 12:13:49 INFO plugins: autoreply - *autoreply
+2020-12-04 12:13:49 DEBUG plugins: importing plugins.dnd
+2020-12-04 12:13:49 DEBUG plugins: dnd - [user] tags: ['dnd-dnd', 'dnd-user']
+2020-12-04 12:13:49 INFO plugins: dnd - dnd
+2020-12-04 12:13:49 DEBUG plugins: importing plugins.starter
+2020-12-04 12:13:49 DEBUG plugins: files - [admin] tags: ['starter-files', 'starter-admin']
+2020-12-04 12:13:49 DEBUG plugins: test_one2one_message - [admin] tags: ['starter-test_one2one_message', 'starter-admin']
+2020-12-04 12:13:49 DEBUG plugins: iamspartacus - [user] tags: ['starter-iamspartacus', 'starter-user']
+2020-12-04 12:13:49 DEBUG plugins: verifyme - [user] tags: ['starter-verifyme', 'starter-user']
+2020-12-04 12:13:49 INFO plugins: starter - *files, iamspartacus, *test_one2one_message, verifyme
+2020-12-04 12:13:49 DEBUG plugins: importing plugins.remind
+2020-12-04 12:13:49 DEBUG plugins: remindme - [user] tags: ['remind-remindme', 'remind-user']
+2020-12-04 12:13:49 DEBUG plugins: remindall - [user] tags: ['remind-remindall', 'remind-user']
+2020-12-04 12:13:49 INFO plugins: remind - remindall, remindme
+2020-12-04 12:13:49 DEBUG plugins: importing plugins.chance
+2020-12-04 12:13:49 DEBUG plugins: diceroll - [user] tags: ['chance-diceroll', 'chance-user']
+2020-12-04 12:13:49 DEBUG plugins: coinflip - [user] tags: ['chance-coinflip', 'chance-user']
+2020-12-04 12:13:49 INFO plugins: chance - coinflip, diceroll
+2020-12-04 12:13:49 DEBUG plugins: importing plugins.image.image_memegenerator
+2020-12-04 12:13:49 INFO plugins: image_memegenerator has legacy hangups reference
+2020-12-04 12:13:49 DEBUG plugins: meme - [user] tags: ['image_memegenerator-meme', 'image_memegenerator-user']
+2020-12-04 12:13:49 INFO plugins: image_memegenerator - meme
+2020-12-04 12:13:49 DEBUG plugins: importing plugins.image.image_links
+2020-12-04 12:13:49 INFO plugins: image_links - no commands
+2020-12-04 12:13:49 DEBUG plugins: importing plugins.image.image_linker_reddit
+2020-12-04 12:13:49 INFO plugins.image.image_linker_reddit: 263 trigger(s) loaded
+2020-12-04 12:13:49 DEBUG plugins: redditmemeword - [admin] tags: ['image_linker_reddit-redditmemeword', 'image_linker_reddit-admin']
+2020-12-04 12:13:49 INFO plugins: image_linker_reddit - *redditmemeword
+2020-12-04 12:13:49 DEBUG plugins: importing plugins.namelock
+2020-12-04 12:13:49 INFO plugins: namelock has legacy hangups reference
+2020-12-04 12:13:49 DEBUG plugins: topic - [admin] tags: ['namelock-topic', 'namelock-admin']
+2020-12-04 12:13:49 INFO plugins: namelock - *topic
+2020-12-04 12:13:49 DEBUG plugins: importing plugins.simplewikipedia
+2020-12-04 12:13:49 DEBUG plugins: wiki - [user] tags: ['simplewikipedia-wiki', 'simplewikipedia-user']
+2020-12-04 12:13:49 INFO plugins: simplewikipedia - wiki
+2020-12-04 12:13:49 DEBUG plugins: importing plugins.tldr
+2020-12-04 12:13:49 DEBUG plugins: tldr - [user] tags: ['tldr-tldr', 'tldr-user']
+2020-12-04 12:13:49 DEBUG plugins: tldrecho - [admin] tags: ['tldr-tldrecho', 'tldr-admin']
+2020-12-04 12:13:49 INFO plugins: tldr - tldr, *tldrecho
+2020-12-04 12:13:49 DEBUG plugins: importing plugins.twitpic
+2020-12-04 12:13:49 DEBUG plugins: twitterkey - [admin] tags: ['twitpic-twitterkey', 'twitpic-admin']
+2020-12-04 12:13:49 DEBUG plugins: twittersecret - [admin] tags: ['twitpic-twittersecret', 'twitpic-admin']
+2020-12-04 12:13:49 DEBUG plugins: twitterconfig - [admin] tags: ['twitpic-twitterconfig', 'twitpic-admin']
+2020-12-04 12:13:49 INFO plugins: twitpic - no commands
+2020-12-04 12:13:49 DEBUG plugins: importing plugins.ff_bot
+2020-12-04 12:13:49 INFO plugins: ff_bot has legacy hangups reference
+2020-12-04 12:13:49 DEBUG plugins: ff - [user] tags: ['ff_bot-ff', 'ff_bot-user']
+2020-12-04 12:13:49 DEBUG plugins: ff_subscribe - [admin] tags: ['ff_bot-ff_subscribe', 'ff_bot-admin']
+2020-12-04 12:13:49 DEBUG hangups_conversation: properties cloned from hangups conversation
+2020-12-04 12:13:49 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-04 12:13:49 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-04 12:13:49 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-04 12:13:49 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-04 12:13:49 DEBUG hangups_conversation: properties cloned from hangups conversation
+2020-12-04 12:13:49 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-04 12:13:49 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-04 12:13:49 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-04 12:13:49 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-04 12:13:49 INFO apscheduler.scheduler: Added job "ff" to job store "default"
+2020-12-04 12:13:49 INFO apscheduler.scheduler: Added job "ff" to job store "default"
+2020-12-04 12:13:49 INFO apscheduler.scheduler: Added job "ff" to job store "default"
+2020-12-04 12:13:49 INFO apscheduler.scheduler: Added job "ff" to job store "default"
+2020-12-04 12:13:49 INFO apscheduler.scheduler: Added job "ff" to job store "default"
+2020-12-04 12:13:49 INFO apscheduler.scheduler: Added job "ff" to job store "default"
+2020-12-04 12:13:49 INFO apscheduler.scheduler: Added job "ff" to job store "default"
+2020-12-04 12:13:49 INFO apscheduler.scheduler: Added job "ff" to job store "default"
+2020-12-04 12:13:49 INFO apscheduler.scheduler: Scheduler started
+2020-12-04 12:13:49 INFO plugins: ff_bot - ff, *ff_subscribe
+2020-12-04 12:13:49 DEBUG plugins: importing plugins.frinkster
+2020-12-04 12:13:49 INFO plugins: frinkster - no commands
+2020-12-04 12:13:49 INFO root: bot initialised
+2020-12-04 12:13:49 DEBUG apscheduler.scheduler: Looking for jobs to run
+2020-12-04 12:13:49 DEBUG apscheduler.scheduler: No jobs; waiting until a job is added
+2020-12-04 12:14:15 INFO event: eid/dt: 8G0bOZJTeVf9GrVUBSe3w6/2020-12-04 12:14:15
+2020-12-04 12:14:15 INFO event: cid/cn: Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBw/Noah Wilkes
+2020-12-04 12:14:15 INFO event: c/g/un: 117433565054127991686/117433565054127991686/Noah Wilkes
+2020-12-04 12:14:15 INFO event: len/tx: 10/frink test
+2020-12-04 12:14:15 DEBUG handlers: message: plugins.mentions._handle_mention : coroutine
+2020-12-04 12:14:15 DEBUG handlers: message: plugins.subscribe._handle_keyword : coroutine
+2020-12-04 12:14:15 DEBUG handlers: message: plugins.autoreply._handle_autoreply : coroutine
+2020-12-04 12:14:15 DEBUG handlers: message: plugins.chance._handle_me_action : coroutine
+2020-12-04 12:14:15 DEBUG handlers: message: plugins.image.image_links._watch_image_link : coroutine
+2020-12-04 12:14:15 DEBUG handlers: message: plugins.image.image_linker_reddit._scan_for_triggers : coroutine
+2020-12-04 12:14:15 DEBUG handlers: message: plugins.twitpic._watch_twitter_link : coroutine
+2020-12-04 12:14:15 DEBUG handlers: message: plugins.frinkster._watch_frinkiac : coroutine
+2020-12-04 12:14:15 DEBUG urllib3.connectionpool: Starting new HTTPS connection (1): frinkiac.com
+2020-12-04 12:14:16 DEBUG urllib3.connectionpool: https://frinkiac.com:443 "GET /api/search?q=test HTTP/1.1" 200 1860
+2020-12-04 12:14:16 DEBUG urllib3.connectionpool: Starting new HTTPS connection (1): frinkiac.com
+2020-12-04 12:14:16 DEBUG urllib3.connectionpool: https://frinkiac.com:443 "GET /api/caption?e=S02E05&t=483891 HTTP/1.1" 200 None
+2020-12-04 12:14:16 DEBUG plugins.frinkster: frinkiac meme url: https://frinkiac.com/meme/S02E05/483891.jpg?b64lines=bWF5YmUgSSdtIGFsbCB0dXJuZWQKYXJvdW5kIG9uIHRoZSBzdWJqZWN0LgpXYWl0IGEgbWludXRlLiBXZSdyZSBub3QKaGF2aW5nIGEgZHJ1ZyB0ZXN0CnRvbW9ycm93LCBhcmUgd2U_IE5vLgpWZW5kb3IsIHR3bywgcGxlYXNlLg==
+2020-12-04 12:14:16 DEBUG urllib3.connectionpool: Starting new HTTPS connection (1): frinkiac.com
+2020-12-04 12:14:16 DEBUG urllib3.connectionpool: https://frinkiac.com:443 "GET /meme/S02E05/483891.jpg?b64lines=bWF5YmUgSSdtIGFsbCB0dXJuZWQKYXJvdW5kIG9uIHRoZSBzdWJqZWN0LgpXYWl0IGEgbWludXRlLiBXZSdyZSBub3QKaGF2aW5nIGEgZHJ1ZyB0ZXN0CnRvbW9ycm93LCBhcmUgd2U_IE5vLgpWZW5kb3IsIHR3bywgcGxlYXNlLg== HTTP/1.1" 200 68471
+2020-12-04 12:14:16 DEBUG plugins.frinkster: temporary frinkiac meme file: /tmp/Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBw2oszglmd.jpg
+2020-12-04 12:14:16 WARNING plugins.frinkster: image plugin not loaded - using legacy code
+2020-12-04 12:14:18 DEBUG root: message sending: global context = {'passthru': {}, 'base': {'source': 'unknown', 'importance': 50, 'tags': ['legacy']}}
+2020-12-04 12:14:18 DEBUG root: message sending: Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBw
+2020-12-04 12:14:19 INFO event: eid/dt: 8G0bOZJTeVf9GrVUdW-CkR/2020-12-04 12:14:19
+2020-12-04 12:14:19 INFO event: cid/cn: Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBw/Noah Wilkes
+2020-12-04 12:14:19 INFO event: c/g/un: 111483985599117921453/111483985599117921453/the NPW
+2020-12-04 12:14:19 INFO event: len/tx: 175/https://lh3.googleusercontent.com/-iXK8IejFKek/X8qmqtR0ozI/AAAAAAAA_4o/C7nZwzt2CcUCqOsy7wcGhAQ6VhlLsGKqACK8BGAsYHg/s0/Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBw.1607116456.3792737.jpg
+2020-12-04 12:14:19 INFO handlers: associating image_id=6902512624006273154 with https://lh3.googleusercontent.com/-iXK8IejFKek/X8qmqtR0ozI/AAAAAAAA_4o/C7nZwzt2CcUCqOsy7wcGhAQ6VhlLsGKqACK8BGAsYHg/s0/Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBw.1607116456.3792737.jpg
+2020-12-04 12:14:28 INFO event: eid/dt: 8G0bOZJTeVf9GrVVmKZMy4/2020-12-04 12:14:28
+2020-12-04 12:14:28 INFO event: cid/cn: Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBw/Noah Wilkes
+2020-12-04 12:14:28 INFO event: c/g/un: 117433565054127991686/117433565054127991686/Noah Wilkes
+2020-12-04 12:14:28 INFO event: len/tx: 60/https://twitter.com/JustinGrayWSB/status/1334929532684558341
+2020-12-04 12:14:28 DEBUG handlers: message: plugins.mentions._handle_mention : coroutine
+2020-12-04 12:14:28 DEBUG handlers: message: plugins.subscribe._handle_keyword : coroutine
+2020-12-04 12:14:28 DEBUG handlers: message: plugins.autoreply._handle_autoreply : coroutine
+2020-12-04 12:14:28 DEBUG handlers: message: plugins.chance._handle_me_action : coroutine
+2020-12-04 12:14:28 DEBUG handlers: message: plugins.image.image_links._watch_image_link : coroutine
+2020-12-04 12:14:28 WARNING plugins.image.image_links: image plugin not loaded - using in-built fallback
+2020-12-04 12:14:28 DEBUG handlers: message: plugins.image.image_linker_reddit._scan_for_triggers : coroutine
+2020-12-04 12:14:28 DEBUG handlers: message: plugins.twitpic._watch_twitter_link : coroutine
+2020-12-04 12:14:28 DEBUG plugins.twitpic: temporary screenshot file: /tmp/Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBwky1qwk_v.png
+2020-12-04 12:14:29 DEBUG selenium.webdriver.remote.remote_connection: POST http://127.0.0.1:51763/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--headless"]}}}
+2020-12-04 12:14:29 DEBUG urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1
+2020-12-04 12:14:30 DEBUG urllib3.connectionpool: http://127.0.0.1:51763 "POST /session HTTP/1.1" 500 266
+2020-12-04 12:14:30 DEBUG selenium.webdriver.remote.remote_connection: Finished Request
+2020-12-04 12:14:30 DEBUG root: message sending: global context = {'passthru': {}, 'base': {'source': 'unknown', 'importance': 50, 'tags': ['legacy']}}
+2020-12-04 12:14:30 DEBUG root: message sending: Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBw
+2020-12-04 12:14:30 DEBUG handlers: message: plugins.frinkster._watch_frinkiac : coroutine
+2020-12-04 12:14:31 INFO event: eid/dt: 8G0bOZJTeVf9GrVW0CaXuO/2020-12-04 12:14:30
+2020-12-04 12:14:31 INFO event: cid/cn: Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBw/Noah Wilkes
+2020-12-04 12:14:31 INFO event: c/g/un: 111483985599117921453/111483985599117921453/the NPW
+2020-12-04 12:14:31 INFO event: len/tx: 49/phantomjs could not be started - is it installed?
+2020-12-04 12:14:43 INFO event: eid/dt: 8G0bOZJTeVf9GrVX_yM5NP/2020-12-04 12:14:43
+2020-12-04 12:14:43 INFO event: cid/cn: Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBw/Noah Wilkes
+2020-12-04 12:14:43 INFO event: c/g/un: 117433565054127991686/117433565054127991686/Noah Wilkes
+2020-12-04 12:14:43 INFO event: len/tx: 9//bot quit
+2020-12-04 12:14:43 DEBUG handlers: message: plugins.mentions._handle_mention : coroutine
+2020-12-04 12:14:43 DEBUG handlers: message: plugins.subscribe._handle_keyword : coroutine
+2020-12-04 12:14:43 DEBUG handlers: message: plugins.autoreply._handle_autoreply : coroutine
+2020-12-04 12:14:43 DEBUG handlers: message: plugins.chance._handle_me_action : coroutine
+2020-12-04 12:14:43 DEBUG handlers: message: plugins.image.image_links._watch_image_link : coroutine
+2020-12-04 12:14:43 DEBUG handlers: message: plugins.image.image_linker_reddit._scan_for_triggers : coroutine
+2020-12-04 12:14:43 DEBUG handlers: message: plugins.twitpic._watch_twitter_link : coroutine
+2020-12-04 12:14:43 DEBUG handlers: message: plugins.frinkster._watch_frinkiac : coroutine
+2020-12-04 12:14:43 DEBUG commands: get_available_commands() - 0.00025272369384765625
+2020-12-04 12:14:43 INFO plugins.default: HangupsBot killed by user Noah Wilkes from conversation Noah Wilkes
+2020-12-04 12:14:43 INFO root: bot is exiting
+2020-12-04 12:14:43 DEBUG plugins: removing function pluginunload
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command pluginunload
+2020-12-04 12:14:43 DEBUG plugins: removing function getplugins
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command getplugins
+2020-12-04 12:14:43 DEBUG plugins: removing function addplugin
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command addplugin
+2020-12-04 12:14:43 DEBUG plugins: removing function plugininfo
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command plugininfo
+2020-12-04 12:14:43 DEBUG plugins: removing function removeplugin
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command removeplugin
+2020-12-04 12:14:43 DEBUG plugins: removing function pluginreload
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command pluginreload
+2020-12-04 12:14:43 DEBUG plugins: removing function pluginload
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command pluginload
+2020-12-04 12:14:43 INFO plugins: commands.plugincontrol unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function help
+2020-12-04 12:14:43 DEBUG plugins: removing function resourcememory
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command resourcememory
+2020-12-04 12:14:43 DEBUG plugins: removing function locale
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command locale
+2020-12-04 12:14:43 DEBUG plugins: removing function version
+2020-12-04 12:14:43 DEBUG plugins: removing function optout
+2020-12-04 12:14:43 DEBUG plugins: removing function ping
+2020-12-04 12:14:43 DEBUG plugins: deregistering tagged command user
+2020-12-04 12:14:43 INFO plugins: commands.basic unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function tagindexdump
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command tagindexdump
+2020-12-04 12:14:43 DEBUG plugins: removing function tagset
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command tagset
+2020-12-04 12:14:43 DEBUG plugins: removing function tagsuser
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command tagsuser
+2020-12-04 12:14:43 DEBUG plugins: removing function tagsconv
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command tagsconv
+2020-12-04 12:14:43 DEBUG plugins: removing function tagdel
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command tagdel
+2020-12-04 12:14:43 DEBUG plugins: removing function tagspurge
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command tagspurge
+2020-12-04 12:14:43 DEBUG plugins: removing function tagsuserlist
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command tagsuserlist
+2020-12-04 12:14:43 DEBUG plugins: removing function tagscommand
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command tagscommand
+2020-12-04 12:14:43 INFO plugins: commands.tagging unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function dumpunknownusers
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command dumpunknownusers
+2020-12-04 12:14:43 DEBUG plugins: removing function resetunknownusers
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command resetunknownusers
+2020-12-04 12:14:43 DEBUG plugins: removing function makeallusersindefinite
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command makeallusersindefinite
+2020-12-04 12:14:43 DEBUG plugins: removing function refreshusermemory
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command refreshusermemory
+2020-12-04 12:14:43 DEBUG plugins: removing function dumpconv
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command dumpconv
+2020-12-04 12:14:43 DEBUG plugins: removing function removeconvrecord
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command removeconvrecord
+2020-12-04 12:14:43 INFO plugins: commands.permamem unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function convecho
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command convecho
+2020-12-04 12:14:43 DEBUG plugins: removing function convleave
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command convleave
+2020-12-04 12:14:43 DEBUG plugins: removing function convrename
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command convrename
+2020-12-04 12:14:43 DEBUG plugins: removing function convfilter
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command convfilter
+2020-12-04 12:14:43 DEBUG plugins: removing function convusers
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command convusers
+2020-12-04 12:14:43 INFO plugins: commands.convid unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function logconfig
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command logconfig
+2020-12-04 12:14:43 DEBUG plugins: removing function lograise
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command lograise
+2020-12-04 12:14:43 INFO plugins: commands.loggertochat unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function botalias
+2020-12-04 12:14:43 INFO plugins: plugins.botaliases unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function config
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command config
+2020-12-04 12:14:43 DEBUG plugins: removing function leave
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command leave
+2020-12-04 12:14:43 DEBUG plugins: removing function broadcast
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command broadcast
+2020-12-04 12:14:43 DEBUG plugins: removing function whoami
+2020-12-04 12:14:43 DEBUG plugins: removing function echo
+2020-12-04 12:14:43 DEBUG plugins: removing function quit
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command quit
+2020-12-04 12:14:43 DEBUG plugins: removing function hangouts
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command hangouts
+2020-12-04 12:14:43 DEBUG plugins: removing function users
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command users
+2020-12-04 12:14:43 DEBUG plugins: removing function whereami
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command whereami
+2020-12-04 12:14:43 DEBUG plugins: removing function rename
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command rename
+2020-12-04 12:14:43 DEBUG plugins: removing function reload
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command reload
+2020-12-04 12:14:43 DEBUG plugins: removing function user
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command user
+2020-12-04 12:14:43 INFO plugins: plugins.default unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function mention
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command mention
+2020-12-04 12:14:43 DEBUG plugins: removing function pushbulletapi
+2020-12-04 12:14:43 DEBUG plugins: removing function bemorespecific
+2020-12-04 12:14:43 DEBUG plugins: removing function setnickname
+2020-12-04 12:14:43 DEBUG plugins: removing handler message (<function _handle_mention at 0x7fda1b502048>, 50, {'module': 'mentions', 'module.path': 'plugins.mentions', 'function.original': <function _handle_mention at 0x7fda1b502048>})
+2020-12-04 12:14:43 DEBUG plugins: untrack handler added by plugins.mentions (<function _handle_mention at 0x7fda1b502048>, 'message', 50)
+2020-12-04 12:14:43 INFO plugins: plugins.mentions unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function testsubscribe
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command testsubscribe
+2020-12-04 12:14:43 DEBUG plugins: removing function subscribe
+2020-12-04 12:14:43 DEBUG plugins: removing function unsubscribe
+2020-12-04 12:14:43 DEBUG plugins: removing handler message (<function _handle_keyword at 0x7fda1a87f7b8>, 50, {'module': 'subscribe', 'module.path': 'plugins.subscribe', 'function.original': <function _handle_keyword at 0x7fda1a87f7b8>})
+2020-12-04 12:14:43 DEBUG plugins: untrack handler added by plugins.subscribe (<function _handle_keyword at 0x7fda1a87f7b8>, 'message', 50)
+2020-12-04 12:14:43 INFO plugins: plugins.subscribe unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function autoreply
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command autoreply
+2020-12-04 12:14:43 DEBUG plugins: removing handler membership (<function _handle_autoreply at 0x7fda1a87fe18>, 50, {'module': 'autoreply', 'module.path': 'plugins.autoreply', 'function.original': <function _handle_autoreply at 0x7fda1a87fe18>})
+2020-12-04 12:14:43 DEBUG plugins: untrack handler added by plugins.autoreply (<function _handle_autoreply at 0x7fda1a87fe18>, 'message', 50)
+2020-12-04 12:14:43 DEBUG plugins: removing handler message (<function _handle_autoreply at 0x7fda1a87fe18>, 50, {'module': 'autoreply', 'module.path': 'plugins.autoreply', 'function.original': <function _handle_autoreply at 0x7fda1a87fe18>})
+2020-12-04 12:14:43 DEBUG plugins: untrack handler added by plugins.autoreply (<function _handle_autoreply at 0x7fda1a87fe18>, 'membership', 50)
+2020-12-04 12:14:43 INFO plugins: plugins.autoreply unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function dnd
+2020-12-04 12:14:43 DEBUG plugins: removing shared dnd.user_check
+2020-12-04 12:14:43 INFO plugins: plugins.dnd unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function verifyme
+2020-12-04 12:14:43 DEBUG plugins: removing function iamspartacus
+2020-12-04 12:14:43 DEBUG plugins: removing function test_one2one_message
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command test_one2one_message
+2020-12-04 12:14:43 DEBUG plugins: removing function files
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command files
+2020-12-04 12:14:43 INFO plugins: plugins.starter unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function remindall
+2020-12-04 12:14:43 DEBUG plugins: removing function remindme
+2020-12-04 12:14:43 INFO plugins: plugins.remind unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function coinflip
+2020-12-04 12:14:43 DEBUG plugins: removing function diceroll
+2020-12-04 12:14:43 DEBUG plugins: removing handler message (<function _handle_me_action at 0x7fda1a889c80>, 50, {'module': 'chance', 'module.path': 'plugins.chance', 'function.original': <function _handle_me_action at 0x7fda1a889c80>})
+2020-12-04 12:14:43 DEBUG plugins: untrack handler added by plugins.chance (<function _handle_me_action at 0x7fda1a889c80>, 'message', 50)
+2020-12-04 12:14:43 INFO plugins: plugins.chance unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function meme
+2020-12-04 12:14:43 INFO plugins: plugins.image.image_memegenerator unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing handler message (<function _watch_image_link at 0x7fda1a89a620>, 50, {'module': 'image_links', 'module.path': 'plugins.image.image_links', 'function.original': <function _watch_image_link at 0x7fda1a89a620>})
+2020-12-04 12:14:43 DEBUG plugins: untrack handler added by plugins.image.image_links (<function _watch_image_link at 0x7fda1a89a620>, 'message', 50)
+2020-12-04 12:14:43 INFO plugins: plugins.image.image_links unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function redditmemeword
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command redditmemeword
+2020-12-04 12:14:43 DEBUG plugins: removing handler message (<function _scan_for_triggers at 0x7fda1a89aa60>, 50, {'module': 'image_linker_reddit', 'module.path': 'plugins.image.image_linker_reddit', 'function.original': <function _scan_for_triggers at 0x7fda1a89aa60>})
+2020-12-04 12:14:43 DEBUG plugins: untrack handler added by plugins.image.image_linker_reddit (<function _scan_for_triggers at 0x7fda1a89aa60>, 'message', 50)
+2020-12-04 12:14:43 INFO plugins: plugins.image.image_linker_reddit unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function topic
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command topic
+2020-12-04 12:14:43 DEBUG plugins: removing handler rename (<function _watch_rename at 0x7fda1a89ad08>, 50, {'module': 'namelock', 'module.path': 'plugins.namelock', 'function.original': <function _watch_rename at 0x7fda1a89ad08>})
+2020-12-04 12:14:43 DEBUG plugins: untrack handler added by plugins.namelock (<function _watch_rename at 0x7fda1a89ad08>, 'rename', 50)
+2020-12-04 12:14:43 INFO plugins: plugins.namelock unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function wiki
+2020-12-04 12:14:43 INFO plugins: plugins.simplewikipedia unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function tldr
+2020-12-04 12:14:43 DEBUG plugins: removing function tldrecho
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command tldrecho
+2020-12-04 12:14:43 DEBUG plugins: removing shared plugin_tldr_shared
+2020-12-04 12:14:43 INFO plugins: plugins.tldr unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing handler message (<function _watch_twitter_link at 0x7fda1a7660d0>, 50, {'module': 'twitpic', 'module.path': 'plugins.twitpic', 'function.original': <function _watch_twitter_link at 0x7fda1a7660d0>})
+2020-12-04 12:14:43 DEBUG plugins: untrack handler added by plugins.twitpic (<function _watch_twitter_link at 0x7fda1a7660d0>, 'message', 50)
+2020-12-04 12:14:43 INFO plugins: plugins.twitpic unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing function ff_subscribe
+2020-12-04 12:14:43 DEBUG plugins: deregistering admin command ff_subscribe
+2020-12-04 12:14:43 DEBUG plugins: removing function ff
+2020-12-04 12:14:43 INFO plugins: plugins.ff_bot unloaded
+2020-12-04 12:14:43 DEBUG plugins: removing handler message (<function _watch_frinkiac at 0x7fda1a69a488>, 50, {'module': 'frinkster', 'module.path': 'plugins.frinkster', 'function.original': <function _watch_frinkiac at 0x7fda1a69a488>})
+2020-12-04 12:14:43 DEBUG plugins: untrack handler added by plugins.frinkster (<function _watch_frinkiac at 0x7fda1a69a488>, 'message', 50)
+2020-12-04 12:14:43 INFO plugins: plugins.frinkster unloaded
+2020-12-04 12:21:20 INFO config: /home/ubuntu/.local/share/hangupsbot/config.json read
+2020-12-04 12:21:20 INFO root: memory = /home/ubuntu/.local/share/hangupsbot/memory.json, failsafe = 3, delay = 1
+2020-12-04 12:21:20 INFO config: /home/ubuntu/.local/share/hangupsbot/memory.json read
+2020-12-04 12:21:20 DEBUG urllib3.connectionpool: Starting new HTTPS connection (1): accounts.google.com
+2020-12-04 12:21:20 DEBUG urllib3.connectionpool: https://accounts.google.com:443 "POST /o/oauth2/token HTTP/1.1" 200 None
+2020-12-04 12:21:20 DEBUG urllib3.connectionpool: https://accounts.google.com:443 "GET /accounts/OAuthLogin?source=hangups&issueuberauth=1 HTTP/1.1" 200 None
+2020-12-04 12:21:20 DEBUG urllib3.connectionpool: https://accounts.google.com:443 "GET /MergeSession?service=mail&continue=http://www.google.com&uberauth=APh-3FyODA93YAATrQcy4hprWJd6h-7PxI4rjlhBH9L1JnFKIYIOw1qzc_Del5t_u_-xqLjPpJue1smZUJJH_MOPxOkU0fuBAFb6i3YX2dDx4vSj6wMYtvXMrVf9xOpzCyc95ZPbTfc0Hnbx9oDN2i0LbkDxoRAYhPZiU4VuSGOrRvg_xY6Xzv2W2zkg3Y-rd-0SEUC3dB5Qckr7jf8CzwYUbMPlMaF2b-kJq-Pm3e4EsmN6GJ-3dB81eQl_1gpmhhdJIdhZI3mnD33nT6rZctaeqYuE5WyLzv2ASt_5xpcqPNErcG-oBTyYVmKqXTTtSOXl1GvvJvJGNR2osw_gPMq2lm1F3fd0KC5weraZutNql_FP3FOWkfBKvKUb7qUt7voPEEg7_ndFL0l6dg2lKgNH8g2d0lILK7CkPwXKfaJ9fbM21KNOh3T4Ln1HjvyyMIm0YAJ0mUDZ HTTP/1.1" 302 316
+2020-12-04 12:21:21 DEBUG urllib3.connectionpool: https://accounts.google.com:443 "GET /CheckCookie?chtml=LoginDoneHtml&service=mail&continue=https%3A%2F%2Fwww.google.com&gidl=EgIIAA HTTP/1.1" 302 204
+2020-12-04 12:21:21 DEBUG urllib3.connectionpool: Starting new HTTPS connection (1): www.google.com
+2020-12-04 12:21:21 DEBUG urllib3.connectionpool: https://www.google.com:443 "GET / HTTP/1.1" 200 None
+2020-12-04 12:21:21 DEBUG root: connected
+2020-12-04 12:21:21 INFO tagging: refreshed
+2020-12-04 12:21:22 INFO permamem: loading 33 conversations from memory
+2020-12-04 12:21:22 DEBUG permamem: user 116880863767822189835 (Unknown) not definitive
+2020-12-04 12:21:22 INFO permamem: loading 26 users from hangups
+2020-12-04 12:21:22 DEBUG permamem: user 116880863767822189835 (Unknown) not definitive
+2020-12-04 12:21:22 INFO permamem: loading 33 conversations from hangups
+2020-12-04 12:21:22 WARNING permamem: unknown users returned from Geoff, Xaviea, Alberto, Teri, Leah, Unknown, Jarvis, Noah, Chris (UgzHFhAmcLucJ3-Ey8p4AaABAQ): ['116880863767822189835']
+2020-12-04 12:21:22 DEBUG permamem: getentitybyid(): ['116880863767822189835']
+2020-12-04 12:21:22 DEBUG permamem: updating hangups user list 116880863767822189835 (Unknown)
+2020-12-04 12:21:22 DEBUG permamem: user 116880863767822189835 (Unknown) not definitive
+2020-12-04 12:21:22 INFO permamem: total conversations: 33
+2020-12-04 12:21:22 INFO permamem: total users: 26 cached: 26 definitive (at start): 26
+2020-12-04 12:21:22 DEBUG plugins: plugininfo - [admin] tags: ['plugincontrol-plugininfo', 'plugincontrol-admin']
+2020-12-04 12:21:22 DEBUG plugins: pluginunload - [admin] tags: ['plugincontrol-pluginunload', 'plugincontrol-admin']
+2020-12-04 12:21:22 DEBUG plugins: pluginload - [admin] tags: ['plugincontrol-pluginload', 'plugincontrol-admin']
+2020-12-04 12:21:22 DEBUG plugins: pluginreload - [admin] tags: ['plugincontrol-pluginreload', 'plugincontrol-admin']
+2020-12-04 12:21:22 DEBUG plugins: getplugins - [admin] tags: ['plugincontrol-getplugins', 'plugincontrol-admin']
+2020-12-04 12:21:22 DEBUG plugins: removeplugin - [admin] tags: ['plugincontrol-removeplugin', 'plugincontrol-admin']
+2020-12-04 12:21:22 DEBUG plugins: addplugin - [admin] tags: ['plugincontrol-addplugin', 'plugincontrol-admin']
+2020-12-04 12:21:22 DEBUG plugins: importing commands.plugincontrol
+2020-12-04 12:21:22 INFO plugins: plugincontrol - *addplugin, *getplugins, *plugininfo, *pluginload, *pluginreload, *pluginunload, *removeplugin
+2020-12-04 12:21:22 DEBUG plugins: help - [user] tags: ['basic-help', 'basic-user']
+2020-12-04 12:21:22 DEBUG plugins: locale - [admin] tags: ['basic-locale', 'basic-admin']
+2020-12-04 12:21:22 DEBUG plugins: ping - [user] tags: ['basic-ping', 'basic-user']
+2020-12-04 12:21:22 DEBUG plugins: optout - [user] tags: ['basic-optout', 'basic-user']
+2020-12-04 12:21:22 DEBUG plugins: version - [user] tags: ['basic-version', 'basic-user']
+2020-12-04 12:21:22 DEBUG plugins: resourcememory - [admin] tags: ['basic-resourcememory', 'basic-admin']
+2020-12-04 12:21:22 DEBUG plugins: importing commands.basic
+2020-12-04 12:21:22 INFO plugins: basic - help, *locale, optout, ping, *resourcememory, version
+2020-12-04 12:21:22 DEBUG plugins: tagset - [admin] tags: ['tagging-tagset', 'tagging-admin']
+2020-12-04 12:21:22 DEBUG plugins: tagdel - [admin] tags: ['tagging-tagdel', 'tagging-admin']
+2020-12-04 12:21:22 DEBUG plugins: tagspurge - [admin] tags: ['tagging-tagspurge', 'tagging-admin']
+2020-12-04 12:21:22 DEBUG plugins: tagscommand - [admin] tags: ['tagging-tagscommand', 'tagging-admin']
+2020-12-04 12:21:22 DEBUG plugins: tagindexdump - [admin] tags: ['tagging-tagindexdump', 'tagging-admin']
+2020-12-04 12:21:22 DEBUG plugins: tagsconv - [admin] tags: ['tagging-tagsconv', 'tagging-admin']
+2020-12-04 12:21:22 DEBUG plugins: tagsuser - [admin] tags: ['tagging-tagsuser', 'tagging-admin']
+2020-12-04 12:21:22 DEBUG plugins: tagsuserlist - [admin] tags: ['tagging-tagsuserlist', 'tagging-admin']
+2020-12-04 12:21:22 DEBUG plugins: importing commands.tagging
+2020-12-04 12:21:22 INFO plugins: tagging - *tagdel, *tagindexdump, *tagscommand, *tagsconv, *tagset, *tagspurge, *tagsuser, *tagsuserlist
+2020-12-04 12:21:22 DEBUG plugins: importing commands.permamem
+2020-12-04 12:21:22 DEBUG plugins: dumpconv - [admin] tags: ['permamem-dumpconv', 'permamem-admin']
+2020-12-04 12:21:22 DEBUG plugins: dumpunknownusers - [admin] tags: ['permamem-dumpunknownusers', 'permamem-admin']
+2020-12-04 12:21:22 DEBUG plugins: resetunknownusers - [admin] tags: ['permamem-resetunknownusers', 'permamem-admin']
+2020-12-04 12:21:22 DEBUG plugins: refreshusermemory - [admin] tags: ['permamem-refreshusermemory', 'permamem-admin']
+2020-12-04 12:21:22 DEBUG plugins: removeconvrecord - [admin] tags: ['permamem-removeconvrecord', 'permamem-admin']
+2020-12-04 12:21:22 DEBUG plugins: makeallusersindefinite - [admin] tags: ['permamem-makeallusersindefinite', 'permamem-admin']
+2020-12-04 12:21:22 INFO plugins: permamem - *dumpconv, *dumpunknownusers, *makeallusersindefinite, *refreshusermemory, *removeconvrecord, *resetunknownusers
+2020-12-04 12:21:22 DEBUG plugins: importing commands.convid
+2020-12-04 12:21:22 INFO plugins: convid has legacy hangups reference
+2020-12-04 12:21:22 DEBUG plugins: convecho - [admin] tags: ['convid-convecho', 'convid-admin']
+2020-12-04 12:21:22 DEBUG plugins: convfilter - [admin] tags: ['convid-convfilter', 'convid-admin']
+2020-12-04 12:21:22 DEBUG plugins: convleave - [admin] tags: ['convid-convleave', 'convid-admin']
+2020-12-04 12:21:22 DEBUG plugins: convrename - [admin] tags: ['convid-convrename', 'convid-admin']
+2020-12-04 12:21:22 DEBUG plugins: convusers - [admin] tags: ['convid-convusers', 'convid-admin']
+2020-12-04 12:21:22 INFO plugins: convid - *convecho, *convfilter, *convleave, *convrename, *convusers
+2020-12-04 12:21:22 DEBUG plugins: importing commands.loggertochat
+2020-12-04 12:21:22 DEBUG plugins: lograise - [admin] tags: ['loggertochat-lograise', 'loggertochat-admin']
+2020-12-04 12:21:22 DEBUG plugins: logconfig - [admin] tags: ['loggertochat-logconfig', 'loggertochat-admin']
+2020-12-04 12:21:22 INFO plugins: loggertochat - *logconfig, *lograise
+2020-12-04 12:21:22 DEBUG plugins: retrieved 0: image_screenshot.[]
+2020-12-04 12:21:22 DEBUG plugins: retrieved 0: image_linker_reddit.[]
+2020-12-04 12:21:22 DEBUG plugins: retrieved 4: image.['image_links', 'image_screenshot', 'image_linker_reddit', 'image_memegenerator']
+2020-12-04 12:21:22 DEBUG plugins: retrieved 5: _example.['example_webbridge', 'example_memory', 'example_watchmembers', 'example_argpreprocessor', 'example_printrenames']
+2020-12-04 12:21:22 DEBUG plugins: retrieved 6: _unittest.['unittest_shutup', 'unittest_geticon', 'unittest_context', 'unittest_reprocessor', 'unittest_memory', 'unittest_statusevents']
+2020-12-04 12:21:22 DEBUG plugins: retrieved 3: chatbridge.['chatbridge_telegram', 'chatbridge_slack', 'chatbridge_syncrooms']
+2020-12-04 12:21:22 DEBUG plugins: retrieved 0: slackrtm.[]
+2020-12-04 12:21:22 DEBUG plugins: retrieved 3: _chatbridge.['chatbridge_telegram', 'chatbridge_slack', 'chatbridge_syncrooms']
+2020-12-04 12:21:22 DEBUG plugins: retrieved 0: _cam_mail_intercept.[]
+2020-12-04 12:21:22 DEBUG plugins: retrieved 0: cleverbot.[]
+2020-12-04 12:21:22 DEBUG plugins: retrieved 0: telesync.[]
+2020-12-04 12:21:22 DEBUG plugins: retrieved 0: showme.[]
+2020-12-04 12:21:22 DEBUG plugins: retrieved 76: plugins.['twitpic (copy)', 'image', 'image.image_links', 'image.image_screenshot', 'image.image_linker_reddit', 'image.image_memegenerator', 'urbandict', 'botaliases', 'restrictedadd', 'mentions', 'twitpic', 'syncrooms', 'botalive', 'convtools', '_example', '_example.example_webbridge', '_example.example_memory', '_example.example_watchmembers', '_example.example_argpreprocessor', '_example.example_printrenames', 'spawn', 'convtools_invitations', 'wolframalpha', 'lookup', 'dnd', 'default', 'lottery', 'starter', 'asyncio_scratch', 'simplewikipedia', 'humor_hangoutcalls', '_unittest', '_unittest.unittest_shutup', '_unittest.unittest_geticon', '_unittest.unittest_context', '_unittest.unittest_reprocessor', '_unittest.unittest_memory', '_unittest.unittest_statusevents', 'chance', 'xkcd', 'namelock', 'chatlogger', 'chatbridge', 'chatbridge.chatbridge_telegram', 'chatbridge.chatbridge_slack', 'chatbridge.chatbridge_syncrooms', 'api', 'monitoradds', 'botaddnotif', 'slackrtm', 'spotify', 'forwarding', 'metar', 'subscribe', 'linksharing', 'twitter', 'catfact', 'ff_bot', 'foursquare', '_chatbridge', '_chatbridge.chatbridge_telegram', '_chatbridge.chatbridge_slack', '_chatbridge.chatbridge_syncrooms', 'remind', 'forecast', 'tldr', 'syncrooms_config', '_cam_mail_intercept', 'frinkster', 'cleverbot', 'autoreply', 'slack', 'hubot', 'telesync', 'easteregg', 'showme']
+2020-12-04 12:21:22 DEBUG plugins: 0:pluginmanager no match
+2020-12-04 12:21:22 DEBUG plugins: 1:botaliases matched to botaliases
+2020-12-04 12:21:22 DEBUG plugins: 2:default matched to default
+2020-12-04 12:21:22 DEBUG plugins: 3:mentions matched to mentions
+2020-12-04 12:21:22 DEBUG plugins: 4:subscribe matched to subscribe
+2020-12-04 12:21:22 DEBUG plugins: 5:autoreply matched to autoreply
+2020-12-04 12:21:22 DEBUG plugins: 6:dnd matched to dnd
+2020-12-04 12:21:22 DEBUG plugins: 7:starter matched to starter
+2020-12-04 12:21:22 DEBUG plugins: 8:remind matched to remind
+2020-12-04 12:21:22 DEBUG plugins: 9:chance matched to chance
+2020-12-04 12:21:22 DEBUG plugins: 10:image_memegenerator matched to image.image_memegenerator
+2020-12-04 12:21:22 DEBUG plugins: 11:image_links matched to image.image_links
+2020-12-04 12:21:22 DEBUG plugins: 12:image_linker_reddit matched to image.image_linker_reddit
+2020-12-04 12:21:22 DEBUG plugins: 13:twitter-disable no match
+2020-12-04 12:21:22 DEBUG plugins: 14:namelock matched to namelock
+2020-12-04 12:21:22 DEBUG plugins: 15:simplewikipedia matched to simplewikipedia
+2020-12-04 12:21:22 DEBUG plugins: 16:tldr matched to tldr
+2020-12-04 12:21:22 DEBUG plugins: 17:twitpic matched to twitpic
+2020-12-04 12:21:22 DEBUG plugins: 18:ff_bot matched to ff_bot
+2020-12-04 12:21:22 DEBUG plugins: 19:frinkster matched to frinkster
+2020-12-04 12:21:22 INFO plugins: excluded 58: ['twitpic (copy)', 'image', 'image.image_screenshot', 'urbandict', 'restrictedadd', 'syncrooms', 'botalive', 'convtools', '_example', '_example.example_webbridge', '_example.example_memory', '_example.example_watchmembers', '_example.example_argpreprocessor', '_example.example_printrenames', 'spawn', 'convtools_invitations', 'wolframalpha', 'lookup', 'lottery', 'asyncio_scratch', 'humor_hangoutcalls', '_unittest', '_unittest.unittest_shutup', '_unittest.unittest_geticon', '_unittest.unittest_context', '_unittest.unittest_reprocessor', '_unittest.unittest_memory', '_unittest.unittest_statusevents', 'xkcd', 'chatlogger', 'chatbridge', 'chatbridge.chatbridge_telegram', 'chatbridge.chatbridge_slack', 'chatbridge.chatbridge_syncrooms', 'api', 'monitoradds', 'botaddnotif', 'slackrtm', 'spotify', 'forwarding', 'metar', 'linksharing', 'twitter', 'catfact', 'foursquare', '_chatbridge', '_chatbridge.chatbridge_telegram', '_chatbridge.chatbridge_slack', '_chatbridge.chatbridge_syncrooms', 'forecast', 'syncrooms_config', '_cam_mail_intercept', 'cleverbot', 'slack', 'hubot', 'telesync', 'easteregg', 'showme']
+2020-12-04 12:21:22 WARNING plugins: not found: ['0:pluginmanager', '13:twitter-disable']
+2020-12-04 12:21:22 INFO plugins: included 18: ['botaliases', 'default', 'mentions', 'subscribe', 'autoreply', 'dnd', 'starter', 'remind', 'chance', 'image.image_memegenerator', 'image.image_links', 'image.image_linker_reddit', 'namelock', 'simplewikipedia', 'tldr', 'twitpic', 'ff_bot', 'frinkster']
+2020-12-04 12:21:22 DEBUG plugins: importing plugins.botaliases
+2020-12-04 12:21:22 INFO plugins.botaliases: aliases: ['/bot', '/the', '/111483985599117921453']
+2020-12-04 12:21:22 DEBUG plugins: botalias - [user] tags: ['botaliases-botalias', 'botaliases-user']
+2020-12-04 12:21:22 INFO plugins: botaliases - botalias
+2020-12-04 12:21:22 DEBUG plugins: importing plugins.default
+2020-12-04 12:21:22 INFO plugins: default has legacy hangups reference
+2020-12-04 12:21:22 DEBUG plugins: broadcast - [admin] tags: ['default-broadcast', 'default-admin']
+2020-12-04 12:21:22 DEBUG plugins: users - [admin] tags: ['default-users', 'default-admin']
+2020-12-04 12:21:22 DEBUG plugins: user - [admin] tags: ['default-user', 'default-admin']
+2020-12-04 12:21:22 DEBUG plugins: hangouts - [admin] tags: ['default-hangouts', 'default-admin']
+2020-12-04 12:21:22 DEBUG plugins: rename - [admin] tags: ['default-rename', 'default-admin']
+2020-12-04 12:21:22 DEBUG plugins: leave - [admin] tags: ['default-leave', 'default-admin']
+2020-12-04 12:21:22 DEBUG plugins: reload - [admin] tags: ['default-reload', 'default-admin']
+2020-12-04 12:21:22 DEBUG plugins: quit - [admin] tags: ['default-quit', 'default-admin']
+2020-12-04 12:21:22 DEBUG plugins: config - [admin] tags: ['default-config', 'default-admin']
+2020-12-04 12:21:22 DEBUG plugins: whereami - [admin] tags: ['default-whereami', 'default-admin']
+2020-12-04 12:21:22 DEBUG plugins: echo - [user] tags: ['default-echo', 'default-user']
+2020-12-04 12:21:22 DEBUG plugins: whoami - [user] tags: ['default-whoami', 'default-user']
+2020-12-04 12:21:22 INFO plugins: default - *broadcast, *config, echo, *hangouts, *leave, *quit, *reload, *rename, *user, *users, *whereami, whoami
+2020-12-04 12:21:22 DEBUG plugins: importing plugins.mentions
+2020-12-04 12:21:22 DEBUG plugins: pushbulletapi - [user] tags: ['mentions-pushbulletapi', 'mentions-user']
+2020-12-04 12:21:22 DEBUG plugins: setnickname - [user] tags: ['mentions-setnickname', 'mentions-user']
+2020-12-04 12:21:22 DEBUG plugins: bemorespecific - [user] tags: ['mentions-bemorespecific', 'mentions-user']
+2020-12-04 12:21:22 DEBUG plugins: mention - [admin] tags: ['mentions-mention', 'mentions-admin']
+2020-12-04 12:21:22 INFO plugins: mentions - bemorespecific, *mention, pushbulletapi, setnickname
+2020-12-04 12:21:22 DEBUG plugins: importing plugins.subscribe
+2020-12-04 12:21:22 DEBUG plugins: subscribe - [user] tags: ['subscribe-subscribe', 'subscribe-user']
+2020-12-04 12:21:22 DEBUG plugins: unsubscribe - [user] tags: ['subscribe-unsubscribe', 'subscribe-user']
+2020-12-04 12:21:22 DEBUG plugins: testsubscribe - [admin] tags: ['subscribe-testsubscribe', 'subscribe-admin']
+2020-12-04 12:21:22 INFO plugins: subscribe - subscribe, *testsubscribe, unsubscribe
+2020-12-04 12:21:22 DEBUG plugins: importing plugins.autoreply
+2020-12-04 12:21:22 INFO plugins: autoreply has legacy hangups reference
+2020-12-04 12:21:22 DEBUG plugins: autoreply - [admin] tags: ['autoreply-autoreply', 'autoreply-admin']
+2020-12-04 12:21:22 INFO plugins: autoreply - *autoreply
+2020-12-04 12:21:22 DEBUG plugins: importing plugins.dnd
+2020-12-04 12:21:22 DEBUG plugins: dnd - [user] tags: ['dnd-dnd', 'dnd-user']
+2020-12-04 12:21:22 INFO plugins: dnd - dnd
+2020-12-04 12:21:22 DEBUG plugins: importing plugins.starter
+2020-12-04 12:21:22 DEBUG plugins: files - [admin] tags: ['starter-files', 'starter-admin']
+2020-12-04 12:21:22 DEBUG plugins: test_one2one_message - [admin] tags: ['starter-test_one2one_message', 'starter-admin']
+2020-12-04 12:21:22 DEBUG plugins: iamspartacus - [user] tags: ['starter-iamspartacus', 'starter-user']
+2020-12-04 12:21:22 DEBUG plugins: verifyme - [user] tags: ['starter-verifyme', 'starter-user']
+2020-12-04 12:21:22 INFO plugins: starter - *files, iamspartacus, *test_one2one_message, verifyme
+2020-12-04 12:21:22 DEBUG plugins: importing plugins.remind
+2020-12-04 12:21:22 DEBUG plugins: remindme - [user] tags: ['remind-remindme', 'remind-user']
+2020-12-04 12:21:22 DEBUG plugins: remindall - [user] tags: ['remind-remindall', 'remind-user']
+2020-12-04 12:21:22 INFO plugins: remind - remindall, remindme
+2020-12-04 12:21:22 DEBUG plugins: importing plugins.chance
+2020-12-04 12:21:22 DEBUG plugins: diceroll - [user] tags: ['chance-diceroll', 'chance-user']
+2020-12-04 12:21:22 DEBUG plugins: coinflip - [user] tags: ['chance-coinflip', 'chance-user']
+2020-12-04 12:21:22 INFO plugins: chance - coinflip, diceroll
+2020-12-04 12:21:22 DEBUG plugins: importing plugins.image.image_memegenerator
+2020-12-04 12:21:22 INFO plugins: image_memegenerator has legacy hangups reference
+2020-12-04 12:21:22 DEBUG plugins: meme - [user] tags: ['image_memegenerator-meme', 'image_memegenerator-user']
+2020-12-04 12:21:22 INFO plugins: image_memegenerator - meme
+2020-12-04 12:21:22 DEBUG plugins: importing plugins.image.image_links
+2020-12-04 12:21:22 INFO plugins: image_links - no commands
+2020-12-04 12:21:22 DEBUG plugins: importing plugins.image.image_linker_reddit
+2020-12-04 12:21:22 INFO plugins.image.image_linker_reddit: 263 trigger(s) loaded
+2020-12-04 12:21:22 DEBUG plugins: redditmemeword - [admin] tags: ['image_linker_reddit-redditmemeword', 'image_linker_reddit-admin']
+2020-12-04 12:21:22 INFO plugins: image_linker_reddit - *redditmemeword
+2020-12-04 12:21:22 DEBUG plugins: importing plugins.namelock
+2020-12-04 12:21:22 INFO plugins: namelock has legacy hangups reference
+2020-12-04 12:21:22 DEBUG plugins: topic - [admin] tags: ['namelock-topic', 'namelock-admin']
+2020-12-04 12:21:22 INFO plugins: namelock - *topic
+2020-12-04 12:21:22 DEBUG plugins: importing plugins.simplewikipedia
+2020-12-04 12:21:22 DEBUG plugins: wiki - [user] tags: ['simplewikipedia-wiki', 'simplewikipedia-user']
+2020-12-04 12:21:22 INFO plugins: simplewikipedia - wiki
+2020-12-04 12:21:22 DEBUG plugins: importing plugins.tldr
+2020-12-04 12:21:22 DEBUG plugins: tldr - [user] tags: ['tldr-tldr', 'tldr-user']
+2020-12-04 12:21:22 DEBUG plugins: tldrecho - [admin] tags: ['tldr-tldrecho', 'tldr-admin']
+2020-12-04 12:21:22 INFO plugins: tldr - tldr, *tldrecho
+2020-12-04 12:21:22 DEBUG plugins: importing plugins.twitpic
+2020-12-04 12:21:22 DEBUG plugins: twitterkey - [admin] tags: ['twitpic-twitterkey', 'twitpic-admin']
+2020-12-04 12:21:22 DEBUG plugins: twittersecret - [admin] tags: ['twitpic-twittersecret', 'twitpic-admin']
+2020-12-04 12:21:22 DEBUG plugins: twitterconfig - [admin] tags: ['twitpic-twitterconfig', 'twitpic-admin']
+2020-12-04 12:21:22 INFO plugins: twitpic - no commands
+2020-12-04 12:21:22 DEBUG plugins: importing plugins.ff_bot
+2020-12-04 12:21:22 INFO plugins: ff_bot has legacy hangups reference
+2020-12-04 12:21:22 DEBUG plugins: ff - [user] tags: ['ff_bot-ff', 'ff_bot-user']
+2020-12-04 12:21:22 DEBUG plugins: ff_subscribe - [admin] tags: ['ff_bot-ff_subscribe', 'ff_bot-admin']
+2020-12-04 12:21:22 DEBUG hangups_conversation: properties cloned from hangups conversation
+2020-12-04 12:21:22 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-04 12:21:22 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-04 12:21:22 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-04 12:21:22 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-04 12:21:22 DEBUG hangups_conversation: properties cloned from hangups conversation
+2020-12-04 12:21:22 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-04 12:21:22 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-04 12:21:22 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-04 12:21:22 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-04 12:21:22 INFO apscheduler.scheduler: Added job "ff" to job store "default"
+2020-12-04 12:21:22 INFO apscheduler.scheduler: Added job "ff" to job store "default"
+2020-12-04 12:21:22 INFO apscheduler.scheduler: Added job "ff" to job store "default"
+2020-12-04 12:21:22 INFO apscheduler.scheduler: Added job "ff" to job store "default"
+2020-12-04 12:21:22 INFO apscheduler.scheduler: Added job "ff" to job store "default"
+2020-12-04 12:21:22 INFO apscheduler.scheduler: Added job "ff" to job store "default"
+2020-12-04 12:21:22 INFO apscheduler.scheduler: Added job "ff" to job store "default"
+2020-12-04 12:21:22 INFO apscheduler.scheduler: Added job "ff" to job store "default"
+2020-12-04 12:21:22 INFO apscheduler.scheduler: Scheduler started
+2020-12-04 12:21:22 INFO plugins: ff_bot - ff, *ff_subscribe
+2020-12-04 12:21:22 DEBUG plugins: importing plugins.frinkster
+2020-12-04 12:21:22 INFO plugins: frinkster - no commands
+2020-12-04 12:21:22 INFO root: bot initialised
+2020-12-04 12:21:22 DEBUG apscheduler.scheduler: Looking for jobs to run
+2020-12-04 12:21:22 DEBUG apscheduler.scheduler: No jobs; waiting until a job is added
+2020-12-04 12:21:44 INFO event: eid/dt: 8G0bOZJTeVf9GrWKwui_Ta/2020-12-04 12:21:44
+2020-12-04 12:21:44 INFO event: cid/cn: Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBw/Noah Wilkes
+2020-12-04 12:21:44 INFO event: c/g/un: 117433565054127991686/117433565054127991686/Noah Wilkes
+2020-12-04 12:21:44 INFO event: len/tx: 60/https://twitter.com/JustinGrayWSB/status/1334929532684558341
+2020-12-04 12:21:44 DEBUG handlers: message: plugins.mentions._handle_mention : coroutine
+2020-12-04 12:21:44 DEBUG handlers: message: plugins.subscribe._handle_keyword : coroutine
+2020-12-04 12:21:44 DEBUG handlers: message: plugins.autoreply._handle_autoreply : coroutine
+2020-12-04 12:21:44 DEBUG handlers: message: plugins.chance._handle_me_action : coroutine
+2020-12-04 12:21:44 DEBUG handlers: message: plugins.image.image_links._watch_image_link : coroutine
+2020-12-04 12:21:44 WARNING plugins.image.image_links: image plugin not loaded - using in-built fallback
+2020-12-04 12:21:44 DEBUG handlers: message: plugins.image.image_linker_reddit._scan_for_triggers : coroutine
+2020-12-04 12:21:44 DEBUG handlers: message: plugins.twitpic._watch_twitter_link : coroutine
+2020-12-04 12:21:44 DEBUG plugins.twitpic: temporary screenshot file: /tmp/Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBwdnrpt1n8.png
+2020-12-04 12:21:45 DEBUG selenium.webdriver.remote.remote_connection: POST http://127.0.0.1:50783/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--headless"]}}}
+2020-12-04 12:21:45 DEBUG urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1
+2020-12-04 12:21:47 DEBUG urllib3.connectionpool: http://127.0.0.1:50783 "POST /session HTTP/1.1" 200 684
+2020-12-04 12:21:47 DEBUG selenium.webdriver.remote.remote_connection: Finished Request
+2020-12-04 12:21:47 DEBUG selenium.webdriver.remote.remote_connection: POST http://127.0.0.1:50783/session/f5fc3c4f05900cb3d66072e0a34cc7b0/window/rect {"x": null, "y": null, "width": 500, "height": 2000}
+2020-12-04 12:21:47 DEBUG urllib3.connectionpool: http://127.0.0.1:50783 "POST /session/f5fc3c4f05900cb3d66072e0a34cc7b0/window/rect HTTP/1.1" 200 49
+2020-12-04 12:21:47 DEBUG selenium.webdriver.remote.remote_connection: Finished Request
+2020-12-04 12:21:47 DEBUG selenium.webdriver.remote.remote_connection: POST http://127.0.0.1:50783/session/f5fc3c4f05900cb3d66072e0a34cc7b0/window/maximize {}
+2020-12-04 12:21:47 DEBUG urllib3.connectionpool: http://127.0.0.1:50783 "POST /session/f5fc3c4f05900cb3d66072e0a34cc7b0/window/maximize HTTP/1.1" 200 49
+2020-12-04 12:21:47 DEBUG selenium.webdriver.remote.remote_connection: Finished Request
+2020-12-04 12:21:47 INFO plugins.twitpic: screencapping file://localhost/opt/hangoutsbot/twtr.html?usr=JustinGrayWSB&tid=1334929532684558341 and saving as /tmp/Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBwdnrpt1n8.png
+2020-12-04 12:21:47 DEBUG selenium.webdriver.remote.remote_connection: POST http://127.0.0.1:50783/session/f5fc3c4f05900cb3d66072e0a34cc7b0/url {"url": "file://localhost/opt/hangoutsbot/twtr.html?usr=JustinGrayWSB&tid=1334929532684558341"}
+2020-12-04 12:21:47 DEBUG urllib3.connectionpool: http://127.0.0.1:50783 "POST /session/f5fc3c4f05900cb3d66072e0a34cc7b0/url HTTP/1.1" 200 14
+2020-12-04 12:21:47 DEBUG selenium.webdriver.remote.remote_connection: Finished Request
+2020-12-04 12:21:52 DEBUG selenium.webdriver.remote.remote_connection: POST http://127.0.0.1:50783/session/f5fc3c4f05900cb3d66072e0a34cc7b0/element {"using": "css selector", "value": "[id=\"tweetgohere\"]"}
+2020-12-04 12:21:52 DEBUG urllib3.connectionpool: http://127.0.0.1:50783 "POST /session/f5fc3c4f05900cb3d66072e0a34cc7b0/element HTTP/1.1" 200 88
+2020-12-04 12:21:52 DEBUG selenium.webdriver.remote.remote_connection: Finished Request
+2020-12-04 12:21:52 DEBUG selenium.webdriver.remote.remote_connection: GET http://127.0.0.1:50783/session/f5fc3c4f05900cb3d66072e0a34cc7b0/element/8027233c-e43a-413c-955f-831fddbef5f5/screenshot {"id": "8027233c-e43a-413c-955f-831fddbef5f5"}
+2020-12-04 12:21:52 DEBUG urllib3.connectionpool: http://127.0.0.1:50783 "GET /session/f5fc3c4f05900cb3d66072e0a34cc7b0/element/8027233c-e43a-413c-955f-831fddbef5f5/screenshot HTTP/1.1" 200 78132
+2020-12-04 12:21:52 DEBUG selenium.webdriver.remote.remote_connection: Finished Request
+2020-12-04 12:21:52 DEBUG plugins.twitpic: opening screenshot file: /tmp/Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBwdnrpt1n8.png
+2020-12-04 12:21:52 DEBUG selenium.webdriver.remote.remote_connection: DELETE http://127.0.0.1:50783/session/f5fc3c4f05900cb3d66072e0a34cc7b0 {}
+2020-12-04 12:21:52 DEBUG urllib3.connectionpool: http://127.0.0.1:50783 "DELETE /session/f5fc3c4f05900cb3d66072e0a34cc7b0 HTTP/1.1" 200 14
+2020-12-04 12:21:52 DEBUG selenium.webdriver.remote.remote_connection: Finished Request
+2020-12-04 12:21:52 WARNING plugins.twitpic: image plugin not loaded - using legacy code
+2020-12-04 12:21:53 DEBUG root: message sending: global context = {'passthru': {}, 'base': {'source': 'unknown', 'importance': 50, 'tags': ['legacy']}}
+2020-12-04 12:21:53 DEBUG root: message sending: Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBw
+2020-12-04 12:21:54 DEBUG handlers: message: plugins.frinkster._watch_frinkiac : coroutine
+2020-12-04 12:21:55 INFO event: eid/dt: 8G0bOZJTeVf9GrWMGaw9oh/2020-12-04 12:21:54
+2020-12-04 12:21:55 INFO event: cid/cn: Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBw/Noah Wilkes
+2020-12-04 12:21:55 INFO event: c/g/un: 111483985599117921453/111483985599117921453/the NPW
+2020-12-04 12:21:55 INFO event: len/tx: 174/https://lh3.googleusercontent.com/-_frFDZ_J2lk/X8qocmIOYcI/AAAAAAAA_5E/2A3NZ63NQ8MT5Ht7tFkDJtQq2r3BbzXSwCK8BGAsYHg/s0/Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBw.1607116904.661469.png
+2020-12-04 12:21:55 INFO handlers: associating image_id=6902514584753177474 with https://lh3.googleusercontent.com/-_frFDZ_J2lk/X8qocmIOYcI/AAAAAAAA_5E/2A3NZ63NQ8MT5Ht7tFkDJtQq2r3BbzXSwCK8BGAsYHg/s0/Ugx5wI62oAAbBSNCn5F4AaABAagB3oGnBw.1607116904.661469.png
+2020-12-04 12:22:18 INFO root: bot is exiting
+2020-12-04 12:22:18 DEBUG plugins: removing function pluginunload
+2020-12-04 12:22:18 DEBUG plugins: deregistering admin command pluginunload
+2020-12-04 12:22:18 DEBUG plugins: removing function pluginload
